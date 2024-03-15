@@ -256,3 +256,12 @@ test.c:411: error: expected ‘{’ at end of input
 cc1: all warnings being treated as errors
 Compilation failed
 3dbc595
+Fri 15 Mar 2024 04:04:22 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c:44:20: error: expected ‘;’, ‘,’ or ‘)’ before ‘=’ token
+   44 |   int *mergedArray = (int *)malloc((size1 + size2) * sizeof(int);
+      |                    ^
+Compilation failed
+21fa35a
