@@ -40,7 +40,8 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,{
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+                       int mergedArray[])
   int *mergedArray = (int *)malloc((size1 + size2) * sizeof(int);
   int i =0, j =0, k =0;
   while (i < size1 && j < size2){
