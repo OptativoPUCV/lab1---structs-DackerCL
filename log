@@ -28,3 +28,15 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 1475a1e
+Fri 15 Mar 2024 03:40:29 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Fri 15 Mar 2024 04:03:14 AM UTC: 
+ exercises.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c:43:69: error: expected declaration specifiers or ‘...’ before ‘{’ token
+   43 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,{
+      |                                                                     ^
+Compilation failed
+93dbe64

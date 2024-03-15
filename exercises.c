@@ -18,7 +18,7 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
   int temp;
-  for (int i = 0; i < size / 2; i++){
+  for (int i =0; i < size / 2; i++){
     temp = arr[i];
     arr[i] = arr[size - i - 1];
     arr[size - i - 1] = temp;
@@ -40,15 +40,17 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-int result[]) {
-  int i = 0, j = 0, k = 0;
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,{
+  int *mergedArray = (int *)malloc((size1 + size2) * sizeof(int);
+  int i =0, j =0, k =0;
   while (i < size1 && j < size2){
     if (arr1[i] < arr2[j]){
-      result[k] = arr1[i];
+      mergedArray[k] = arr1[i];
       i++;
     }
   }
+}
+
 /*
 Ejercicio 5: Comprobación de Ordenación
 Descripción: Escribe una función que tome un arreglo y su tamaño,
