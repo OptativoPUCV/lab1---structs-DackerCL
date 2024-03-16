@@ -328,3 +328,9 @@ exercises.c:37:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 e801d66
+Sat 16 Mar 2024 05:44:57 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 10/70
+fa6e76b
