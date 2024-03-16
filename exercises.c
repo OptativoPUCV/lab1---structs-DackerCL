@@ -88,7 +88,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 int checkSorted(int arr[], int size) { 
   int ascendente = 1;
   int descendente = 1; //Asumiremos que lo son 
-  for(int i = 0 ; i < size - 1 ; i++){
+  for(int i = 0 ; i < size - 1 ; i++){ //No puedo comparar con el último
     if(arr[i] > arr[i+1]){
       ascendente ++;
     } else if (arr[i] < arr[i+1]){
@@ -124,7 +124,12 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) {
+  libro->autor.anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;
+  strcpy(libro->titulo,titulo);
+  strcpy(libro->autor.nombre,nombreAutor);
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
