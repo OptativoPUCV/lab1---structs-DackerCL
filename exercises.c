@@ -69,7 +69,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
   //bubble sort
   for(int i = 0 ; i < size1 + size2 - 1 ; i++){
     for(int j = 0 ; j < size1 + size2 - 1 - i ; j++){
-      if(result[j] > result[j + i]){
+      if(result[j] < result[j + i]){
         int temp = result[j + 1];
         result[j + 1] = result[j];
         result[j] = temp;
