@@ -157,7 +157,10 @@ Nodo *crearListaEnlazada(int arr[], int size) { //Consultar
     if (lista == NULL){
       lista = nuevoNodo;
       ultimo = nuevoNodo;
-    } else if(lista != NULL));
+    } else{
+      ultimo->siguiente = nuevoNodo;
+      ultimo = nuevoNodo;
+    }
   }
   return lista;
 }
