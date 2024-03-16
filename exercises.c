@@ -10,13 +10,13 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
 int findMax(int arr[], int size) { 
-  int max = arr[0];
-  for (int i = 1; i < size; i++){
-    if (arr[i] > max){
-      max = arr[i];
+  int mayor = arr[0];
+  for(int i = 0 ; i < size ; i ++){
+    if(arr[i] > mayor){
+      mayor = arr[i];
     }
   }
-  return max;
+  return mayor;
 }
 /*
 Ejercicio 2: Invertir un Arreglo
@@ -24,12 +24,7 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
-  int temp;
-  for (int i =0; i < size / 2; i++){
-    temp = arr[i];
-    arr[i] = arr[size - i - 1];
-    arr[size - i - 1] = temp;
-  }  
+ 
 }
 
 /*
@@ -39,16 +34,7 @@ y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
-  int *evenArr = (int *)malloc(size * sizeof(int));
-  int count = 0;
-  for (int i = 0; i < size; i++){
-    if (arr[i] % 2 == 0){
-      evenArr[count] = arr[i];
-      count++;
-    }
-  }
-  *newSize = count;
-  return evenArr; 
+
 }
 
 
@@ -59,7 +45,7 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
-  
+
 }
  
 
