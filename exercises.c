@@ -90,14 +90,14 @@ int checkSorted(int arr[], int size) {
   int descendente = 1; //Asumiremos que lo son 
   for(int i = 0 ; i < size ; i++){
     if(arr[i] > arr[i+1]){
-      ascendente ++;
+      ascendente = 0;
     } else if (arr[i] < arr[i+1]){
-      descendente ++;
+      descendente = 0;
     }
   }
   if(ascendente == 1){
     return 1;
-  } else if(descendente == 1){
+  } else if (descendente == 1){
     return -1;
   } else{
     return 0;
