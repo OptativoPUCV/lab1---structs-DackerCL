@@ -11,6 +11,7 @@ y su tamaño, y devuelva el valor más grande del arreglo.
 */
 int findMax(int arr[], int size) { return 0; }
 
+
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
@@ -41,15 +42,7 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-  int *mergedArray = (int *)malloc((size1 + size2) * sizeof(int);
-  int i =0, j =0, k =0;
-  while (i < size1 && j < size2){
-    if (arr1[i] < arr2[j]){
-      mergedArray[k] = arr1[i];
-      i++;
-    }
-  }
-}
+ 
 
 /*
 Ejercicio 5: Comprobación de Ordenación

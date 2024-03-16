@@ -265,3 +265,12 @@ exercises.c:44:20: error: expected ‘;’, ‘,’ or ‘)’ before ‘=’ to
       |                    ^
 Compilation failed
 21fa35a
+Sat 16 Mar 2024 05:13:24 AM UTC: 
+ exercises.c | 10 +---------
+ 1 file changed, 1 insertion(+), 9 deletions(-)
+In file included from test.c:1:
+exercises.c:53:38: error: expected ‘;’, ‘,’ or ‘)’ before ‘{’ token
+   53 | int checkSorted(int arr[], int size) { return -2; }
+      |                                      ^
+Compilation failed
+1c07ab1
