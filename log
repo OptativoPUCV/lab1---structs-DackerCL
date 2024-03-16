@@ -406,3 +406,17 @@ Sat 16 Mar 2024 06:07:50 PM UTC:
  tests:  0|1
 total_score: 60/70
 8e8c961
+Sat 16 Mar 2024 06:09:47 PM UTC: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:160:29: error: expected statement before ‘)’ token
+  160 |     } else if(lista != NULL));
+      |                             ^
+exercises.c:152:9: error: variable ‘ultimo’ set but not used [-Werror=unused-but-set-variable]
+  152 |   Nodo *ultimo = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5505041
